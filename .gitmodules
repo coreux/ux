@@ -7,3 +7,6 @@
 [submodule "false"]
 	path = false
 	url = git://github.com/nevali/false.git
+[submodule "true"]
+	path = true
+	url = git://github.com/nevali/true.git
