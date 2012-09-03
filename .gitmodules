@@ -13,3 +13,6 @@
 [submodule "mesg"]
 	path = mesg
 	url = git://github.com/nevali/mesg.git
+[submodule "link"]
+	path = link
+	url = git://github.com/nevali/link.git

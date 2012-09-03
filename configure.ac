@@ -23,6 +23,9 @@ fi
 if test -d "$srcdir/false" ; then
    AC_CONFIG_SUBDIRS([false])
 fi
+if test -d "$srcdir/link" ; then
+   AC_CONFIG_SUBDIRS([link])
+fi
 if test -d "$srcdir/mesg" ; then
    AC_CONFIG_SUBDIRS([mesg])
 fi
