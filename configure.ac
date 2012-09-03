@@ -29,9 +29,6 @@ fi
 if test -d "$srcdir/uname" ; then
    AC_CONFIG_SUBDIRS([uname])
 fi
-if test -d "$srcdir/yes" ; then
-   AC_CONFIG_SUBDIRS([yes])
-fi
 
 AC_CONFIG_FILES([Makefile])
 
