@@ -1,0 +1,9 @@
+[submodule "echo"]
+	path = echo
+	url = git://github.com/nevali/echo.git
+[submodule "uname"]
+	path = uname
+	url = git://github.com/nevali/uname.git
+[submodule "false"]
+	path = false
+	url = git://github.com/nevali/false.git
