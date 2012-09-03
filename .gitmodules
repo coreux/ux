@@ -10,3 +10,6 @@
 [submodule "true"]
 	path = true
 	url = git://github.com/nevali/true.git
+[submodule "mesg"]
+	path = mesg
+	url = git://github.com/nevali/mesg.git
