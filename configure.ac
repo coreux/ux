@@ -17,25 +17,29 @@ AC_INIT([ux],[master])
 AM_INIT_AUTOMAKE([foreign])
 AM_MAINTAINER_MODE
 
-if test -d "$srcdir/echo" ; then
-   AC_CONFIG_SUBDIRS([echo])
+dnl - UX_PROJECT([var],[group],[project])
+dnl As AC_CONFIG_SUBDIRS, but looks for group/project and adds
+dnl 'project' to $var
+AC_DEFUN([UX_PROJECT],[
+if test -d "$srcdir/[$2]/[$3]" ; then
+   [$1]="$[$1] [$3]"
+   AC_CONFIG_SUBDIRS([$2]/[$3])
 fi
-if test -d "$srcdir/false" ; then
-   AC_CONFIG_SUBDIRS([false])
-fi
-if test -d "$srcdir/link" ; then
-   AC_CONFIG_SUBDIRS([link])
-fi
-if test -d "$srcdir/mesg" ; then
-   AC_CONFIG_SUBDIRS([mesg])
-fi
-if test -d "$srcdir/true" ; then
-   AC_CONFIG_SUBDIRS([true])
-fi
-if test -d "$srcdir/uname" ; then
-   AC_CONFIG_SUBDIRS([uname])
-fi
+])
 
-AC_CONFIG_FILES([Makefile])
+bin_subdirs=''
+UX_PROJECT([bin_subdirs],[bin],[echo])
+UX_PROJECT([bin_subdirs],[bin],[false])
+UX_PROJECT([bin_subdirs],[bin],[link])
+UX_PROJECT([bin_subdirs],[bin],[mesg])
+UX_PROJECT([bin_subdirs],[bin],[true])
+UX_PROJECT([bin_subdirs],[bin],[uname])
+UX_PROJECT([bin_subdirs],[bin],[unlink])
+AC_SUBST([bin_subdirs])
+
+AC_CONFIG_FILES([
+Makefile
+bin/Makefile
+])
 
 AC_OUTPUT

@@ -12,6 +12,4 @@
 ##  See the License for the specific language governing permissions and
 ##  limitations under the License.
 
-dist_doc_DATA = LICENSE-2.0 README
-
-SUBDIRS = bin
+SUBDIRS = @bin_subdirs@

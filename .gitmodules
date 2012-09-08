@@ -1,18 +1,22 @@
-[submodule "echo"]
-	path = echo
+[submodule "bin/echo"]
+	path = bin/echo
 	url = git://github.com/nevali/echo.git
-[submodule "uname"]
-	path = uname
+[submodule "bin/uname"]
+	path = bin/uname
 	url = git://github.com/nevali/uname.git
-[submodule "false"]
-	path = false
+[submodule "bin/false"]
+	path = bin/false
 	url = git://github.com/nevali/false.git
-[submodule "true"]
-	path = true
+[submodule "bin/true"]
+	path = bin/true
 	url = git://github.com/nevali/true.git
-[submodule "mesg"]
-	path = mesg
+[submodule "bin/mesg"]
+	path = bin/mesg
 	url = git://github.com/nevali/mesg.git
-[submodule "link"]
-	path = link
+[submodule "bin/link"]
+	path = bin/link
 	url = git://github.com/nevali/link.git
+
+[submodule "bin/unlink"]
+	path = bin/unlink
+	url = git://github.com/nevali/unlink.git
