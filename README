@@ -1,6 +1,17 @@
 Strictly conforming implementation of the Single UNIX Specification,
 Version 3 (SUSv3).
 
+------------------------------------------------------------------------
+
+Building from a git clone:
+
+$ git submodule update --init --recursive
+$ autoreconf -i
+$ ./configure --prefix=/path/to/destination
+$ make
+$ sudo make install
+
+------------------------------------------------------------------------
 
 Copyright 2007-2012 Mo McRoberts.
 
